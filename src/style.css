@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  /* Primary branding colors */
+  --color-primary: #4027d1;       /* Main color for buttons, links, highlights */
+  --color-secondary: #2563eb;     /* Secondary color for accents, headings */
+  --color-accent: #4099e7;        /* Highlight color for CTAs, badges */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.15);
+
+  /* Status colors */
+  --color-success: #22c55e;       /* Success messages, badges */
+  --color-warning: #facc15;       /* Warnings, highlights */
+  --color-error: #ef4444;         /* Errors, alerts */
+  --color-info: #3b82f6;          /* Info messages */
+
+  /* Optional: dark theme toggle values */
+  --color-bg-dark: #1f2937;
+  --color-text-dark: #f3f4f6;
+  --color-primary-dark: #6366f1;
+}
