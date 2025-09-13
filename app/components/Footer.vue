@@ -38,26 +38,26 @@
               </li>
               <li>
                 <a
-                  href="/Journey.htmlhover:text-purple-400 transition-colors"
+                  href="/journey"
                   class="hover:text-purple-400 transition-colors"
                   >Journey</a
                 >
               </li>
               <li>
-                <a href="/" class="hover:text-purple-400 transition-colors"
+                <a href="/about" class="hover:text-purple-400 transition-colors"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="/journey.html"
+                  href="/gallary"
                   class="hover:text-purple-400 transition-colors"
                   >Gallery</a
                 >
               </li>
               <li>
                 <a
-                  href="/gallery.html"
+                  href="/contact"
                   class="hover:text-purple-400 transition-colors"
                   >Contact</a
                 >

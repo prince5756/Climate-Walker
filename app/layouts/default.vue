@@ -5,7 +5,7 @@
   <div>
     <Header />
 
-    <main class="p-6 bg-red-400">
+    <main>
       <slot />
     </main>
 

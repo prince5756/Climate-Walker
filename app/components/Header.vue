@@ -10,11 +10,11 @@
         </div>
         <div class="hidden md:flex items-center space-x-8">
           <a href="/" class="hover:text-climate-green transition-colors">Home</a>
-          <a href="/Journey.html" class="hover:text-climate-green transition-colors">Journey</a>
-          <a href="#impact" class="hover:text-climate-green transition-colors">About</a>
-          <a href="#support" class="hover:text-climate-green transition-colors">Gallery</a>
-          <a href="#support" class="hover:text-climate-green transition-colors">Contact</a>
-          <a href="#support" class="hover:text-climate-green transition-colors">Live Map</a>
+          <a href="/journey" class="hover:text-climate-green transition-colors">Journey</a>
+          <a href="/about" class="hover:text-climate-green transition-colors">About</a>
+          <a href="/gallery" class="hover:text-climate-green transition-colors">Gallery</a>
+          <a href="/contact" class="hover:text-climate-green transition-colors">Contact</a>
+          <a href="#" class="hover:text-climate-green transition-colors">Live Map</a>
           <button
             class="bg-climate-green hover:bg-green-600 text-white px-6 py-2 rounded-full transition-colors transform hover:scale-105 shadow-lg">
             Donate Now
