@@ -41,7 +41,7 @@ const cardContent = [
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative">
-                    <img src="/images/my_journey.jpg" width="400px" alt="Mountain hiking journey" />
+                    <img src="/images/my_journey.webp" width="400px" alt="Mountain hiking journey" />
                 </div>
 
                 <div class="space-y-8">
