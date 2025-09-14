@@ -13,7 +13,8 @@ const appConfig = useAppConfig()
                         <span class="text-climate-green animate-pulse">Planet</span>
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-                        Join the epic {{ appConfig.journeyStats.Kilometers }} km journey from Malta to India - one step at
+                        Join the epic {{ appConfig.journeyStats.Kilometers }} km journey from Malta to India - one step
+                        at
                         a time, spreading climate awareness across {{ appConfig.journeyStats.Countries }} countries and
                         countless communities.
                     </p>
@@ -31,8 +32,10 @@ const appConfig = useAppConfig()
 
                 <!-- Journey Stats -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-                    <div v-for="(value, key, index) in appConfig.journeyStats" :key="index" class="glass-effect p-6 rounded-2xl text-center transform hover:scale-105 transition-all">
-                        <div :class="index === Object.keys(appConfig.journeyStats).length - 1 ? 'text-climate-green' : 'text-white'" class="text-3xl font-bold mb-2">{{ value }}</div>
+                    <div v-for="(value, key, index) in appConfig.journeyStats" :key="index"
+                        class="glass-effect p-6 rounded-2xl text-center transform hover:scale-105 transition-all">
+                        <div :class="index === Object.keys(appConfig.journeyStats).length - 1 ? 'text-climate-green' : 'text-white'"
+                            class="text-3xl font-bold mb-2">{{ value }}</div>
                         <div class="text-gray-300">{{ key }}</div>
                     </div>
                 </div>
@@ -40,3 +43,11 @@ const appConfig = useAppConfig()
         </div>
     </section>
 </template>
+
+<style scoped>
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+</style>
