@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/Climate-Walker/', // ⚠️ must match repo name
+    baseURL: '/Climate-Walker', // ⚠️ must match repo name
     head: {
       title: 'Climate Walker - Portfolio',
       meta: [
