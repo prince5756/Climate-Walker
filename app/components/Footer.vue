@@ -79,10 +79,8 @@ const social = [
           <h4 class="font-bold text-lg mb-4 text-purple-400">Support</h4>
           <div class="space-y-4">
             <p class="text-gray-400">Help me continue this climate journey</p>
-            <button
-              class="bg-climate-green hover:bg-green-600 text-white px-6 py-2 rounded-full transition-colors transform hover:scale-105 shadow-lg">
-              Donate Now
-            </button>
+
+            <DonateButton />
           </div>
         </div>
       </div>
@@ -95,7 +93,8 @@ const social = [
           <span class="text-green-400 text-xl">🌍</span>
         </p>
         <p class="mt-2">
-          &copy; {{ appConfig.copyrightYear }} {{ appConfig.owner.CompanyName }}. Every step counts towards a sustainable
+          &copy; {{ appConfig.copyrightYear }} {{ appConfig.owner.CompanyName }}. Every step counts towards a
+          sustainable
           future.
         </p>
       </div>

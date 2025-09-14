@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const appConfig = useAppConfig()
+</script>
+
 <template>
     <section id="home" class="flex flex-col hero-bg min-h-screen relative p-2">
         <div class="flex-1 grid place-content-center">
@@ -9,12 +13,12 @@
                         <span class="text-climate-green animate-pulse">Planet</span>
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-                        Join the epic 12,000 km journey from Malta to India - one step at
-                        a time, spreading climate awareness across 20 countries and
+                        Join the epic {{ appConfig.journeyStats.Kilometers }} km journey from Malta to India - one step at
+                        a time, spreading climate awareness across {{ appConfig.journeyStats.Countries }} countries and
                         countless communities.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                        <a target="_blank" href="https://www.youtube.com/@the.climate.walker"
+                        <a target="_blank" :href="appConfig.owner.social.YouTube"
                             class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-2xl">
                             Watch the Journey
                         </a>
@@ -27,21 +31,9 @@
 
                 <!-- Journey Stats -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-                    <div class="glass-effect p-6 rounded-2xl text-center transform hover:scale-105 transition-all">
-                        <div class="text-3xl font-bold text-white mb-2">12,000</div>
-                        <div class="text-gray-300">Kilometers</div>
-                    </div>
-                    <div class="glass-effect p-6 rounded-2xl text-center transform hover:scale-105 transition-all">
-                        <div class="text-3xl font-bold text-white mb-2">20</div>
-                        <div class="text-gray-300">Countries</div>
-                    </div>
-                    <div class="glass-effect p-6 rounded-2xl text-center transform hover:scale-105 transition-all">
-                        <div class="text-3xl font-bold text-white mb-2">500+</div>
-                        <div class="text-gray-300">Approx. Days</div>
-                    </div>
-                    <div class="glass-effect p-6 rounded-2xl text-center transform hover:scale-105 transition-all">
-                        <div class="text-3xl font-bold text-climate-green mb-2">0</div>
-                        <div class="text-gray-300">Completed</div>
+                    <div v-for="(value, key, index) in appConfig.journeyStats" :key="index" class="glass-effect p-6 rounded-2xl text-center transform hover:scale-105 transition-all">
+                        <div :class="index === Object.keys(appConfig.journeyStats).length - 1 ? 'text-climate-green' : 'text-white'" class="text-3xl font-bold mb-2">{{ value }}</div>
+                        <div class="text-gray-300">{{ key }}</div>
                     </div>
                 </div>
             </div>

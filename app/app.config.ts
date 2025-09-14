@@ -1,5 +1,6 @@
 export default defineAppConfig({
   copyrightYear: "2025",
+
   owner: {
     name: "Jaydip Lakhankiya",
     CompanyName: "Climate Walker",
@@ -37,5 +38,12 @@ export default defineAppConfig({
       url: '#',
       title: 'Live Map'
     },
-  ]
+  ],
+
+  journeyStats: {
+    "Kilometers": "12,000",
+    "Countries": 20,
+    "Approx. Days": "500+",
+    "Completed": 0
+  }
 })
