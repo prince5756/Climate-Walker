@@ -1,16 +1,23 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
-  ssr: true, // enables server-side rendering (required for SSG)
+  // ✅ SSG for GitHub Pages
+  ssr: true, // Nuxt 4 defaults to SSR; keeps SSG working
   nitro: {
-    preset: 'static'
+    preset: 'static' // generates static files for GitHub Pages
   },
+
   app: {
-    baseURL: '/Climate-Walker/', // ⚠️ required for GitHub Pages
+    baseURL: '/Climate-Walker/', // ⚠️ must match repo name
     head: {
-      title: 'Climate Walker',
+      title: 'Climate Walker - Portfolio',
       meta: [
-        { name: 'description', content: 'My awesome static Nuxt site' }
+        { name: 'description', content: 'Personal portfolio site documenting the journey of Climate Walker.' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { charset: 'utf-8' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ]
     }
-  }
+  },
 })

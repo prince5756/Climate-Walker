@@ -14,13 +14,8 @@
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative">
-                    <img width="500" src="/images/my_journey.jpg" alt="Mountain hiking journey"
-                        class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
-                    <!-- <div
-              class="absolute -top-6 -right-6 w-20 h-20 bg-climate-green rounded-full flex items-center justify-center text-white text-2xl animate-float"
-            >
-              🚶‍♂️
-            </div> -->
+                    <img src="/images/my_journey.jpg" width="400px"
+                        alt="Mountain hiking journey" />
                 </div>
 
                 <div class="space-y-8">
