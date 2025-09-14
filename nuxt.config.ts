@@ -1,9 +1,9 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   // ✅ SSG for GitHub Pages
-  ssr: true, // Nuxt 4 defaults to SSR; keeps SSG working
+  ssr: true,
   nitro: {
-    preset: 'static' // generates static files for GitHub Pages
+    preset: 'github-pages' // Use github-pages preset instead of static
   },
 
   app: {
