@@ -7,7 +7,7 @@ const appConfig = useAppConfig()
     <div class="max-w-7xl mx-auto text-white">
       <div class="flex justify-between items-center h-16">
         <div class="flex ml-12 md:ml-0 items-center">
-          <img height="50" width="50" src="/images/climate-walker-logo.png" :alt="appConfig.owner.CompanyName" />
+          <img height="50" width="50" src="/images/climate-walker-logo.jpg" :alt="appConfig.owner.CompanyName" />
           <span class="ml-3 text-xl font-bold">{{ appConfig.owner.CompanyName }}</span>
         </div>
         <div class="hidden md:flex items-center space-x-8">

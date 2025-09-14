@@ -40,7 +40,7 @@ const social = [
       <div class="grid md:grid-cols-4 gap-8">
         <div>
           <div class="flex items-center mb-6">
-            <img height="50" width="50" src="/images/climate-walker-logo.png" alt="climate-walker" />
+            <img height="50" width="50" src="/images/climate-walker-logo.jpg" alt="climate-walker" />
             <span class="text-2xl ml-5 font-bold flex flex-col">
               {{ appConfig.owner.CompanyName }}
               <a :href="'mailto:' + appConfig.owner.email" class="text-climate-green text-sm hover:text-green-400">
