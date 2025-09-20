@@ -41,7 +41,8 @@ const cardContent = [
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative">
-                    <img src="/images/my_journey.webp" width="400px" alt="Mountain hiking journey" />
+                    <img src="/images/my_journey.webp" width="500" alt="Mountain hiking journey"
+                        class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
                 </div>
 
                 <div class="space-y-8">
