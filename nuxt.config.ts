@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-swiper', 'nuxt-aos'],
   // ✅ SSG for GitHub Pages
   ssr: true,
   nitro: {
