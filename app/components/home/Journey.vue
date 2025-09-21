@@ -40,7 +40,7 @@ const cardContent = [
             </div>
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="relative">
+                <div class="relative flex justify-center items-center">
                     <img src="/images/my_journey.webp" width="500" alt="Mountain hiking journey"
                         class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
                 </div>

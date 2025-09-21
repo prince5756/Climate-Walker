@@ -35,7 +35,7 @@ export default defineAppConfig({
       title: 'Contact'
     },
     {
-      url: '#',
+      url: '/live-map',
       title: 'Live Map'
     },
   ],

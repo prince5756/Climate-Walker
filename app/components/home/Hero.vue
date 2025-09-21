@@ -8,7 +8,7 @@ const appConfig = useAppConfig()
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40"></div>
             <div class="max-w-6xl mx-auto text-center px-6 relative z-10">
                 <div class="animate-fade-in-up">
-                    <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 mt-12 sm:mt-0 leading-tight">
                         Walking for Our
                         <span class="text-climate-green animate-pulse">Planet</span>
                     </h1>
