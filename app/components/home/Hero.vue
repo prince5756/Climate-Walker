@@ -32,7 +32,7 @@ const appConfig = useAppConfig()
 
                 <!-- Journey Stats -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-                    <div v-for="(value, key, index) in appConfig.journeyStats" :key="index"
+                    <div v-for="(value, key, index) in appConfig.journeyStats" :key="index" data-aos="zoom-in"
                         class="glass-effect p-6 rounded-2xl text-center transform hover:scale-105 transition-all">
                         <div :class="index === Object.keys(appConfig.journeyStats).length - 1 ? 'text-climate-green' : 'text-white'"
                             class="text-3xl font-bold mb-2">{{ value }}</div>

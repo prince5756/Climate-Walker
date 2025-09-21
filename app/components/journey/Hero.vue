@@ -32,7 +32,7 @@ const stats = [
 <template>
   <section class="hero-journey min-h-screen flex items-center justify-center relative">
     <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40"></div>
-    <div class="hero-content text-center text-white relative z-10 max-w-6xl mx-auto px-6">
+    <div class="hero-content text-center text-white relative z-10 max-w-6xl mx-auto px-6" data-aos="fade-up">
       <div>
         <h1 class="text-6xl md:text-8xl font-black mb-8">
           The Epic Route

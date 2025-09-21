@@ -41,7 +41,7 @@ const tags = ["SustainableTravel", "ClimateAction", "WalkForEarth", "ClimateAwar
 
             <div class="grid md:grid-cols-3 gap-8 mb-16">
                 <NuxtLink :to="card.url" v-for="(card, index) in climateChangeCard" :key="index"
-                    class="glass-effect p-8 rounded-3xl text-center transform hover:scale-105 transition-all">
+                    class="glass-effect p-8 rounded-3xl text-center transform hover:scale-105 transition-all" data-aos="zoom-out">
                     <div class="text-5xl mb-4">{{ card.icon }}</div>
                     <h3 class="text-2xl font-bold mb-4">{{ card.titel }}</h3>
                     <p class="opacity-90">

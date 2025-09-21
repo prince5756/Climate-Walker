@@ -35,15 +35,6 @@
 .chapter-gradient-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
 .chapter-gradient-6 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
 
-.country-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.country-hover:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
 .progress-ring {
   transform: rotate(-90deg);
 }

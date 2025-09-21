@@ -38,7 +38,7 @@ const supportCard = [
                 <HomePartialsDonate />
 
                 <div class="space-y-8">
-                    <div v-for="(card, index) in supportCard" :key="index" class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div v-for="(card, index) in supportCard" :key="index" class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-left">
                         <div class="flex items-center mb-4">
                             <div
                                 class="w-12 h-12 bg-climate-green rounded-full flex items-center justify-center text-white text-xl mr-4">

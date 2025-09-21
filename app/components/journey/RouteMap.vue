@@ -31,15 +31,15 @@ const autoplayConfig = {
 <template>
   <section class="py-20 bg-white" id="livemap">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
+      <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-5xl font-bold text-gray-800 mb-6">The Route</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
           Follow my path across three continents and 18 countries
         </p>
       </div>
       
-      <div class="max-w-6xl mx-auto">
-        <div class="bg-gradient-to-br from-blue-100 via-green-50 to-orange-50 p-8 rounded-3xl shadow-2xl">
+      <div class="max-w-6xl mx-auto" data-aos="zoom-in">
+        <div class="bg-blue-100 p-8 rounded-3xl shadow-2xl">
           <img src="/images/my_journey.webp" alt="Journey Route Map" class="w-full h-96 object-cover rounded-2xl mb-8 shadow-lg">
           
           <!-- Swiper Container -->
@@ -62,7 +62,7 @@ const autoplayConfig = {
               class="country-swiper"
             >
               <swiper-slide v-for="(country, index) in countries" :key="index">
-                <div class="country-hover bg-white p-6 rounded-2xl shadow-lg text-center h-full w-[200px]">
+                <div class="bg-white p-6 rounded-2xl text-center h-full w-[200px]">
                   <div :class="['w-12 h-12 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold', country.color]">
                     {{ country.code }}
                   </div>
@@ -80,15 +80,6 @@ const autoplayConfig = {
 </template>
 
 <style scoped>
-.country-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.country-hover:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
 /* Swiper styling */
 :deep(.country-swiper::part(pagination)) {
   bottom: -10px;

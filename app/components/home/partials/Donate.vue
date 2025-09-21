@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div>
+    <div data-aos="fade-right">
         <div class="bg-white p-10 rounded-3xl shadow-2xl">
             <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">
                 Make a Donation

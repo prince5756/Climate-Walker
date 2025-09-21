@@ -40,13 +40,13 @@ const cardContent = [
             </div>
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="relative flex justify-center items-center">
+                <div class="relative flex justify-center items-center" data-aos="fade-right">
                     <img src="/images/my_journey.webp" width="500" alt="Mountain hiking journey"
                         class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
                 </div>
 
                 <div class="space-y-8">
-                    <div v-for="(item, index) in cardContent" :key="index"
+                    <div v-for="(item, index) in cardContent" :key="index" data-aos="fade-left"
                         class="bg-gradient-to-r p-8 rounded-2xl border-l-4" :class="item.classes">
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ item.title }}</h3>
                         <p class="text-gray-700 leading-relaxed">

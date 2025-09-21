@@ -6,15 +6,15 @@
 <template>
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
+      <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-5xl font-bold text-gray-800 mb-6">Journey Progress</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
           Track my real-time progress across continents
         </p>
       </div>
 
-      <div class="max-w-4xl mx-auto">
-        <div class="relative bg-gradient-to-br from-blue-50 to-green-50 p-12 rounded-3xl shadow-2xl">
+      <div class="max-w-4xl mx-auto" data-aos="zoom-in">
+        <div class="relative bg-gradient-to-br from-blue-200 via-purple-200 to-cyan-200 p-12 rounded-3xl shadow-2xl">
           <div class="flex justify-center mb-8">
             <div class="relative w-40 h-40">
               <svg class="progress-ring w-full h-full" viewBox="0 0 144 144">

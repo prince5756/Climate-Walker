@@ -68,7 +68,7 @@ const chapters = [
 <template>
   <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
+      <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-5xl font-bold text-gray-800 mb-6">Journey Chapters</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
           Six distinct phases, each with unique challenges and discoveries
@@ -76,7 +76,7 @@ const chapters = [
       </div>
 
       <div class="grid lg:grid-cols-2 gap-8">
-        <div v-for="(chapter, index) in chapters" :key="index"
+        <div v-for="(chapter, index) in chapters" :key="index" :data-aos="index % 2 == 0 ? 'fade-right' : 'fade-left'"
           :class="['p-8 rounded-3xl text-white shadow-2xl', chapter.gradient]">
           <div class="flex items-center mb-6">
             <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-2xl font-bold mr-4">
