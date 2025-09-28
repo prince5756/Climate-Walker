@@ -1,15 +1,17 @@
 <!-- components/JourneyHero.vue -->
 <script setup>
 // Hero section for the Journey page
+
+const appConfig = useAppConfig()
 const stats = [
   {
-    value: "617",
+    value: appConfig.journeyStats['Approx. Days'],
     label: "Total Days",
     color: "text-climate-green",
     hoverColor: "hover:shadow-climate-green"
   },
   {
-    value: "18",
+    value: appConfig.journeyStats.Countries,
     label: "Countries",
     color: "text-climate-blue",
     hoverColor: "hover:shadow-climate-blue"
@@ -46,9 +48,7 @@ const stats = [
             <div class="text-sm opacity-90 font-bold font-sans">{{ stat.label }}</div>
           </div>
         </div>
-        <button class="btn btn-lg bg-red-600 hover:bg-red-700 hover:shadow-lg hover:scale-110 text-white border-none mr-4 transition-all delay-150 duration-300">
-          Follow Live
-        </button>
+        <NuxtLink to="/live-map" class="btn btn-lg bg-red-600 hover:bg-red-700 hover:shadow-lg hover:scale-110 text-white border-none mr-4 transition-all delay-150 duration-300">Follow Live</NuxtLink>
         <button class="btn btn-lg btn-outline text-white transition-all delay-150 duration-300 hover:border-blue-500 hover:text-blue-500 bg-transparent">
           View Timeline
         </button>
