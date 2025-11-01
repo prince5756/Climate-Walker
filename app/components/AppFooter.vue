@@ -1,52 +1,38 @@
 <script setup lang="ts">
 const columns = [{
-  label: 'Resources',
+  label: 'Links',
   children: [{
-    label: 'Help center'
+    label: 'Home'
   }, {
-    label: 'Docs'
-  }, {
-    label: 'Roadmap'
-  }, {
-    label: 'Changelog'
-  }]
-}, {
-  label: 'Features',
-  children: [{
-    label: 'Affiliates'
-  }, {
-    label: 'Portal'
-  }, {
-    label: 'Jobs'
-  }, {
-    label: 'Sponsors'
-  }]
-}, {
-  label: 'Company',
-  children: [{
     label: 'About'
   }, {
-    label: 'Pricing'
+    label: 'Journey'
   }, {
-    label: 'Careers'
+    label: 'Support Us'
   }, {
-    label: 'Blog'
+    label: 'Achievements'
+  }]
+}, {
+  label: 'Connect with us',
+  children: [{
+    label: 'YouTube'
+  }, {
+    label: 'Instagram'
+  }, {
+    label: 'Facebook'
+  }, {
+    label: 'WhatsApp'
   }]
 }]
 
-const toast = useToast()
 
-const email = ref('')
-const loading = ref(false)
+// toast usage example.
+// const toast = useToast()
 
-function onSubmit() {
-  loading.value = true
-
-  toast.add({
-    title: 'Subscribed!',
-    description: 'You\'ve been subscribed to our newsletter.'
-  })
-}
+// toast.add({
+//   title: 'Subscribed!',
+//   description: 'You\'ve been subscribed to our newsletter.'
+// })
 </script>
 
 <template>
@@ -60,28 +46,21 @@ function onSubmit() {
       <UContainer>
         <UFooterColumns :columns="columns">
           <template #right>
-            <form @submit.prevent="onSubmit">
-              <UFormField
-                name="email"
-                label="Subscribe to our newsletter"
-                size="lg"
-              >
-                <UInput
-                  v-model="email"
-                  type="email"
-                  class="w-full"
-                  placeholder="Enter your email"
-                >
-                  <template #trailing>
-                    <UButton
-                      type="submit"
-                      size="xs"
-                      label="Subscribe"
-                    />
-                  </template>
-                </UInput>
-              </UFormField>
-            </form>
+            <div>
+              <div class="flex items-center mb-6">
+                <img src="/climate-walker-logo.png" class="h-12" />
+                <span class="text-2xl ml-5 font-bold flex flex-col">
+                  Climate Walker
+                  <a href="mailto:theclimatewalker@gmail.com" class="text-climate-green text-sm text-green-400 hover:text-green-600">
+                    theclimatewalker@gmail.com
+                  </a>
+                </span>
+              </div>
+              <p class="text-gray-400 leading-relaxed">
+                Walking for climate awareness, one step at a time. Join me in
+                creating a sustainable future for our planet.
+              </p>
+            </div>
           </template>
         </UFooterColumns>
       </UContainer>
@@ -89,32 +68,40 @@ function onSubmit() {
 
     <template #left>
       <p class="text-sm text-muted">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        Climate Walker. Every step counts towards a sustainable future. • © {{ new Date().getFullYear() }}
       </p>
     </template>
 
     <template #right>
       <UButton
-        to="https://go.nuxt.com/discord"
+        to="https://www.youtube.com/@the.climate.walker"
         target="_blank"
-        icon="i-simple-icons-discord"
-        aria-label="Nuxt on Discord"
+        icon="i-simple-icons-youtube"
+        aria-label="Climate Walker on Youtube"
         color="neutral"
         variant="ghost"
       />
       <UButton
-        to="https://go.nuxt.com/x"
+        to="https://www.instagram.com/the.climate.walker"
         target="_blank"
-        icon="i-simple-icons-x"
-        aria-label="Nuxt on X"
+        icon="i-simple-icons-instagram"
+        aria-label="Climate Walker on Instagram"
         color="neutral"
         variant="ghost"
       />
       <UButton
-        to="https://github.com/nuxt-ui-templates/landing"
+        to="https://www.facebook.com/share/1EvQgo67RF/"
         target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="Nuxt UI on GitHub"
+        icon="i-simple-icons-facebook"
+        aria-label="Climate Walker on Facebook"
+        color="neutral"
+        variant="ghost"
+      />
+      <UButton
+        to="https://wa.me/917435827283"
+        target="_blank"
+        icon="i-simple-icons-whatsapp"
+        aria-label="Climate Walker on WhatsApp"
         color="neutral"
         variant="ghost"
       />

@@ -33,30 +33,19 @@ export const collections = {
       hero: z.object({
         links: z.array(createLinkSchema())
       }),
-      section: createBaseSchema().extend({
+      about: createBaseSchema().extend({
         headline: z.string().optional(),
-        images: z.object({
-          mobile: z.string().optional(),
-          desktop: z.string().optional()
-        }),
-        features: z.array(
+        image: z.string().optional(),
+        sections: z.array(
           createBaseSchema().extend({
             icon: z.string().editor({ input: 'icon' })
           })
         )
       }),
-      features: createBaseSchema().extend({
-        features: z.array(createFeatureSchema())
+      journey: createBaseSchema().extend({
+        chapters: z.array(createFeatureSchema())
       }),
-      steps: createBaseSchema().extend({
-        items: z.array(createFeatureSchema().extend({
-          image: z.object({
-            light: z.string().editor({ input: 'media' }),
-            dark: z.string().editor({ input: 'media' })
-          }).optional()
-        }))
-      }),
-      pricing: createBaseSchema().extend({
+      donate: createBaseSchema().extend({
         plans: z.array(
           createBaseSchema().extend({
             price: z.string().nonempty(),
@@ -67,6 +56,14 @@ export const collections = {
             billing_cycle: z.string().nonempty()
           })
         )
+      }),
+      achievements: createBaseSchema().extend({
+        items: z.array(createFeatureSchema().extend({
+          image: z.object({
+            light: z.string().editor({ input: 'media' }),
+            dark: z.string().editor({ input: 'media' })
+          }).optional()
+        }))
       }),
       testimonials: createBaseSchema().extend({
         items: z.array(

@@ -26,6 +26,7 @@ useSeoMeta({
     </div>
 
     <UPageHero
+      id="home"
       :description="page.description"
       :links="page.hero.links"
       :ui="{
@@ -46,8 +47,9 @@ useSeoMeta({
     </UPageHero>
 
     <UPageSection
-      :description="page.section.description"
-      :features="page.section.features"
+      id="about"
+      :description="page.about.description"
+      :features="page.about.sections"
       orientation="horizontal"
       :ui="{
         container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
@@ -57,28 +59,23 @@ useSeoMeta({
     >
       <template #title>
         <MDC
-          :value="page.section.title"
+          :value="page.about.title"
           class="sm:*:leading-11"
         />
       </template>
       <img
-        :src="page.section.images.desktop"
-        :alt="page.section.title"
-        class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
-      >
-      <img
-        :src="page.section.images.mobile"
-        :alt="page.section.title"
-        class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl"
+        :src="page.about.image"
+        :alt="page.about.title"
+        class="block left-0 w-full max-w-md md:2xl:max-w-lg rounded-md"
       >
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageSection
-      id="features"
-      :description="page.features.description"
-      :features="page.features.features"
+      id="journey"
+      :description="page.journey.description"
+      :features="page.journey.chapters"
       :ui="{
         title: 'text-left @container relative flex',
         description: 'text-left'
@@ -89,7 +86,7 @@ useSeoMeta({
       <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <template #title>
         <MDC
-          :value="page.features.title"
+          :value="page.journey.title"
           class="*:leading-9"
         />
         <div class="hidden @min-[1020px]:block">
@@ -105,8 +102,46 @@ useSeoMeta({
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageSection
-      id="steps"
-      :description="page.steps.description"
+      id="support-us"
+      class="mb-32 overflow-hidden"
+      :title="page.donate.title"
+      :description="page.donate.description"
+      :plans="page.donate.plans"
+      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
+    >
+      <template #title>
+        <MDC :value="page.donate.title" />
+
+        <div class="hidden @min-[1120px]:block">
+          <UColorModeImage
+            light="/images/light/line-4.svg"
+            dark="/images/dark/line-4.svg"
+            class="absolute top-0 right-0 size-full transform translate-x-[60%]"
+          />
+        </div>
+      </template>
+
+      <UPricingPlans scale>
+        <UPricingPlan
+          v-for="(plan, index) in page.donate.plans"
+          :key="index"
+          :title="plan.title"
+          :description="plan.description"
+          :price="plan.price"
+          :billing-period="plan.billing_period"
+          :billing-cycle="plan.billing_cycle"
+          :highlight="plan.highlight"
+          :scale="plan.highlight"
+          variant="soft"
+          :features="plan.features"
+          :button="plan.button"
+        />
+      </UPricingPlans>
+    </UPageSection>
+
+    <UPageSection
+      id="achievements"
+      :description="page.achievements.description"
       class="relative overflow-hidden"
     >
       <template #headline>
@@ -117,12 +152,12 @@ useSeoMeta({
         />
       </template>
       <template #title>
-        <MDC :value="page.steps.title" />
+        <MDC :value="page.achievements.title" />
       </template>
 
       <template #features>
         <UPageCard
-          v-for="(step, index) in page.steps.items"
+          v-for="(step, index) in page.achievements.items"
           :key="index"
           class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
@@ -145,44 +180,6 @@ useSeoMeta({
           </div>
         </UPageCard>
       </template>
-    </UPageSection>
-
-    <UPageSection
-      id="pricing"
-      class="mb-32 overflow-hidden"
-      :title="page.pricing.title"
-      :description="page.pricing.description"
-      :plans="page.pricing.plans"
-      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
-    >
-      <template #title>
-        <MDC :value="page.pricing.title" />
-
-        <div class="hidden @min-[1120px]:block">
-          <UColorModeImage
-            light="/images/light/line-4.svg"
-            dark="/images/dark/line-4.svg"
-            class="absolute top-0 right-0 size-full transform translate-x-[60%]"
-          />
-        </div>
-      </template>
-
-      <UPricingPlans scale>
-        <UPricingPlan
-          v-for="(plan, index) in page.pricing.plans"
-          :key="index"
-          :title="plan.title"
-          :description="plan.description"
-          :price="plan.price"
-          :billing-period="plan.billing_period"
-          :billing-cycle="plan.billing_cycle"
-          :highlight="plan.highlight"
-          :scale="plan.highlight"
-          variant="soft"
-          :features="plan.features"
-          :button="plan.button"
-        />
-      </UPricingPlans>
     </UPageSection>
 
     <UPageSection

@@ -3,23 +3,34 @@ const nuxtApp = useNuxtApp()
 const { activeHeadings, updateHeadings } = useScrollspy()
 
 const items = computed(() => [{
-  label: 'Features',
-  to: '#features',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
+  label: 'Home',
+  to: '#home',
+  active: activeHeadings.value.includes('home')
 }, {
-  label: 'Pricing',
-  to: '#pricing',
-  active: activeHeadings.value.includes('pricing')
+  label: 'About',
+  to: '#about',
+  active: activeHeadings.value.includes('about') && !activeHeadings.value.includes('home')
 }, {
-  label: 'Testimonials',
-  to: '#testimonials',
-  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
+  label: 'Journey',
+  to: '#journey',
+  active: activeHeadings.value.includes('journey') && !activeHeadings.value.includes('about')
+}, {
+  label: 'Support Us',
+  to: '#support-us',
+  active: activeHeadings.value.includes('support-us') && !activeHeadings.value.includes('journey')
+}, {
+  label: 'Achievements',
+  to: '#achievements',
+  active: activeHeadings.value.includes('achievements') && !activeHeadings.value.includes('support-us')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
-    document.querySelector('#features'),
-    document.querySelector('#pricing'),
+    document.querySelector('#home'),
+    document.querySelector('#about'),
+    document.querySelector('#journey'),
+    document.querySelector('#support-us'),
+    document.querySelector('#achievements'),
     document.querySelector('#testimonials')
   ].filter(Boolean) as Element[])
 })
@@ -31,8 +42,6 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <NuxtLink to="/">
         <AppLogo class="w-auto h-6 shrink-0" />
       </NuxtLink>
-
-      <TemplateMenu />
     </template>
 
     <template #right>
@@ -43,7 +52,9 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
 
       <UButton
-        label="Download App"
+        to="https://rzp.io/rzp/EERYYaM"
+        target="_blank"
+        label="Donate Now"
         variant="subtle"
         class="hidden lg:block"
       />
@@ -58,8 +69,10 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         class="-mx-2.5"
       />
       <UButton
+        to="https://rzp.io/rzp/EERYYaM"
+        target="_blank"
         class="mt-4"
-        label="Download App"
+        label="Donate Now"
         variant="subtle"
         block
       />
