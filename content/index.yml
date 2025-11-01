@@ -17,8 +17,7 @@ hero:
       size: xl
       color: neutral
       variant: outline
-      to: https://www.youtube.com/@the.climate.walker
-      target: _blank
+      to: '#support-us'
 about:
   title: 'The Epic [Journey]{.text-primary}'
   description: From the Mediterranean shores of Malta to the diverse landscapes of India, every step tells a story of climate resilience and hope.
@@ -39,32 +38,37 @@ journey:
   chapters:
     - title: Mediterranean Islands
       description: Starting in Malta's ancient harbors, walking through Italy's diverse landscapes to Vatican City's spiritual heart.
-      icon: i-lucide-wand-sparkles
+      icon: i-lucide-sun
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+
     - title: Balkan Crossroads
       description: Through Slovenia's Alps to Croatia's coast, across Bosnia's mountains and Serbia's plains.
-      icon: i-lucide-bell-ring
+      icon: i-lucide-map
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+
     - title: Eastern Passage
       description: Bulgaria's rose valleys to Greece's ancient paths, crossing into Turkey's gateway between continents.
-      icon: i-lucide-code-xml
+      icon: i-lucide-compass
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+
     - title: Caucasus Heights
       description: Georgia's wine country to Armenia's ancient monasteries, crossing some of Earth's highest mountain passes.
-      icon: i-lucide-moon
+      icon: i-lucide-mountain
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+
     - title: Persian Journey
       description: Iran's vast deserts and ancient cities, experiencing Persian hospitality and climate adaptation.
-      icon: i-lucide-mouse-pointer-2
+      icon: i-lucide-flame
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+
     - title: Himalayan Finale
       description: Pakistan's mighty peaks to India's diverse landscapes, completing the epic transcontinental journey.
-      icon: i-lucide-chart-line
+      icon: i-lucide-flag
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 donate:
@@ -104,43 +108,59 @@ achievements:
   title: Milestones of [Excellence]{.text-primary}
   description: From certifications to creating organizations, each achievement represents a step towards inspiring and empowering others through adventure and nature conservation.
   items:
-    - title: Connect Your IDE
-      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
-      image:
-        light: '/images/light/connect.svg'
-        dark: '/images/dark/connect.svg'
-    - title: Track & Analyze
-      description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
-      image:
-        light: '/images/light/optimize.svg'
-        dark: '/images/dark/optimize.svg'
-    - title: Optimize & Code Smarter
-      description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
-      image:
-        light: '/images/light/track.svg'
-        dark: '/images/dark/track.svg'
+    - title: Diploma in Tourism
+      label: Education
+      icon: lucide:book-open-check
+      description: Pursued a comprehensive diploma in hospitality, tour, and travel management from a well-known institute in Surat, Gujarat, India.
+
+    - title: Malta Hospitality Diploma
+      label: International Study
+      icon: lucide:globe
+      description: Cleared the exam and interview of Malta's reputed college to study for a diploma in hospitality in Europe. International education achievement.
+
+    - title: First Solo Traveler
+      label: Achievement
+      icon: lucide:footprints
+      description: First solo traveler from Gujarat who traveled all over India by walking and hitchhiking for 182 days. Featured on TV channels, magazines, and social media.
+
+    - title: Certified Trekking Instructor
+      label: Trekking
+      icon: lucide:mountain
+      description: Became a certified trekking instructor with Invincible NGO, India's largest trekking organization. Guided thousands of participants through their dream treks.
+
+    - title: Certified Kayaking Instructor
+      label: Water Sports
+      icon: lucide:waves
+      description: Passed India's toughest institute for watersports "NIWS" (National Institute of Watersports) exam in 2022. Founded Gujarat's first certified kayaking organization.
+
+    - title: Certified Power Paraglider
+      label: Adventure
+      icon: lucide:wind
+      description: Successfully completed basic and advanced courses in power paragliding from NIMAS in 2023. Soaring through skies with certified expertise.
 testimonials:
-  title: Join with thousands of [supporters]{.text-primary}
-  description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
+  title: Join thousands of [supporters]{.text-primary}
+  description: Hear from the amazing people who have been inspired by the journey and have helped make every step possible through their kindness and support.
   items:
-    - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
+    - quote: Supporting this journey reminded me that even small steps can change the world. Watching him walk across countries for a cause is truly inspiring.
       user:
         name: 'Sarah Moriceau'
-        description: 'Brand Designer'
+        description: 'Traveler & Environmentalist'
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
-    - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
+
+    - quote: His dedication to walk across continents for awareness is beyond admirable. It shows what passion and purpose can achieve when combined with courage.
       user:
         name: 'Sébastien Chopin'
-        description:  'Lead Software Engineer'
+        description: 'Adventure Photographer'
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
-    - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
+
+    - quote: I’ve followed his journey since the early days. The stories, the people he meets, and the purpose behind every mile walked—it’s truly a movement of hope.
       user:
         name: 'Benjamin Canac'
-        description:  'Senior Frontend Developer'
+        description: 'Travel Blogger'
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'

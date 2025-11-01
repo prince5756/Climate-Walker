@@ -52,8 +52,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
 
       <UButton
-        to="https://rzp.io/rzp/EERYYaM"
-        target="_blank"
+        to="#support-us"
         label="Donate Now"
         variant="subtle"
         class="hidden lg:block"
@@ -69,8 +68,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         class="-mx-2.5"
       />
       <UButton
-        to="https://rzp.io/rzp/EERYYaM"
-        target="_blank"
+        to="#support-us"
         class="mt-4"
         label="Donate Now"
         variant="subtle"

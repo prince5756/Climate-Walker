@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 const { data: page } = await useAsyncData('index', () => queryCollection('content').first())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
@@ -157,25 +158,27 @@ useSeoMeta({
 
       <template #features>
         <UPageCard
-          v-for="(step, index) in page.achievements.items"
+          v-for="(item, index) in page.achievements.items"
           :key="index"
           class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
-        >
-          <UColorModeImage
-            v-if="step.image"
-            :light="step.image?.light"
-            :dark="step.image?.dark"
-            :alt="step.title"
-            class="size-full"
-          />
+        > 
+          <div class="flex justify-between items-center">
+            <Icon :icon="item.icon" class="text-primary text-5xl mb-3" />
+
+            <UButton
+              :label="item.label"
+              variant="subtle"
+              class="hidden lg:block"
+            />
+          </div>
 
           <div class="flex flex-col gap-2">
             <span class="text-lg font-semibold">
-              {{ step.title }}
+              {{ item.title }}
             </span>
             <span class="text-sm text-muted">
-              {{ step.description }}
+              {{ item.description }}
             </span>
           </div>
         </UPageCard>
