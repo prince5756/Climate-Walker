@@ -19,6 +19,8 @@ export default defineNuxtConfig({
     }
   },
 
+  ssr: true, 
+
   compatibilityDate: '2025-01-15',
 
   nitro: {
@@ -26,7 +28,8 @@ export default defineNuxtConfig({
       routes: [
         '/'
       ]
-    }
+    },
+    preset: 'github-pages'
   },
 
   eslint: {

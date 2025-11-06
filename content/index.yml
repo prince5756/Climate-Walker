@@ -1,7 +1,7 @@
 seo:
-  title: Climate Walker
-  description: Climate Walker a tourist who travel around continents to spread climate awareness.
-title: Walking around world for green future
+  title: The Climate Walker | Walking Across the World for a Greener Future
+  description: Follow the Climate Walker on a 12,000 km journey from Malta to India, inspiring climate awareness, sustainability, and unity across 20 nations.
+title: Walking Around World for Green Future
 description: Join the epic 12,000 km journey from Malta to India - one step at a time, spreading climate awareness across 20 countries and countless communities.
 hero:
   links:
@@ -172,7 +172,7 @@ cta:
       icon: i-simple-icons-youtube
       trailing: true
       variant: ghost
-      class: "bg-red-600 hover:bg-red-700 text-white"
+      class: "width-8 flex justify-between bg-red-600 hover:bg-red-700 text-white"
       to: https://www.youtube.com/@the.climate.walker
       target: _blank
       size: xl
@@ -180,7 +180,7 @@ cta:
       icon: i-simple-icons-instagram
       trailing: true
       variant: ghost
-      class: "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
+      class: "width-8 flex justify-between bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
       to: https://www.instagram.com/the.climate.walker
       target: _blank
       size: xl
@@ -188,7 +188,7 @@ cta:
       icon: i-simple-icons-facebook
       trailing: true
       variant: ghost
-      class: "bg-blue-600 hover:bg-blue-700 text-white"
+      class: "width-8 flex justify-between bg-blue-600 hover:bg-blue-700 text-white"
       to: https://www.facebook.com/share/1EvQgo67RF/
       target: _blank
       size: xl
@@ -196,7 +196,7 @@ cta:
       icon: i-simple-icons-whatsapp
       trailing: true
       variant: ghost
-      class: "bg-green-500 hover:bg-green-600 text-white"
+      class: "width-8 flex justify-between bg-green-500 hover:bg-green-600 text-white"
       to: https://wa.me/917435827283
       target: _blank
       size: xl

@@ -1,30 +1,25 @@
 <script setup lang="ts">
-const columns = [{
-  label: 'Links',
-  children: [{
-    label: 'Home'
-  }, {
-    label: 'About'
-  }, {
-    label: 'Journey'
-  }, {
-    label: 'Support Us'
-  }, {
-    label: 'Achievements'
-  }]
-}, {
-  label: 'Connect with us',
-  children: [{
-    label: 'YouTube'
-  }, {
-    label: 'Instagram'
-  }, {
-    label: 'Facebook'
-  }, {
-    label: 'WhatsApp'
-  }]
-}]
-
+const columns = [
+  {
+    label: 'Links',
+    children: [
+      { label: 'Home', to: '#home' },
+      { label: 'About', to: '#about' },
+      { label: 'Journey', to: '#journey' },
+      { label: 'Support Us', to: '#support-us' },
+      { label: 'Achievements', to: '#achievements' }
+    ]
+  },
+  {
+    label: 'Connect with us',
+    children: [
+      { label: 'YouTube', href: 'https://www.youtube.com/@the.climate.walker', target: '_blank' },
+      { label: 'Instagram', href: 'https://www.instagram.com/the.climate.walker', target: '_blank' },
+      { label: 'Facebook', href: 'https://www.facebook.com/share/1EvQgo67RF/', target: '_blank' },
+      { label: 'WhatsApp', href: 'https://wa.me/917435827283', target: '_blank' }
+    ]
+  }
+]
 
 // toast usage example.
 // const toast = useToast()

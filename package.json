@@ -8,7 +8,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "generate": "nuxt generate",
+    "deploy": "nuxt generate && npx gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.71",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "@nuxt/eslint": "^1.9.0",
     "eslint": "^9.38.0",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.1.2"
   },

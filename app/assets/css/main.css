@@ -6,3 +6,7 @@
 @theme {
   --font-sans: 'Public Sans', sans-serif;
 }
+
+.width-8 {
+  min-width: 8.5rem !important;
+}
