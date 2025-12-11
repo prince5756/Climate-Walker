@@ -42,9 +42,6 @@ export const collections = {
           })
         )
       }),
-      journey: createBaseSchema().extend({
-        chapters: z.array(createFeatureSchema())
-      }),
       donate: createBaseSchema().extend({
         plans: z.array(
           createBaseSchema().extend({

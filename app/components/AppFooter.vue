@@ -5,7 +5,6 @@ const columns = [
     children: [
       { label: 'Home', to: '#home' },
       { label: 'About', to: '#about' },
-      { label: 'Journey', to: '#journey' },
       { label: 'Support Us', to: '#support-us' },
       { label: 'Achievements', to: '#achievements' }
     ]

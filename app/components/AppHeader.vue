@@ -11,13 +11,9 @@ const items = computed(() => [{
   to: '#about',
   active: activeHeadings.value.includes('about') && !activeHeadings.value.includes('home')
 }, {
-  label: 'Journey',
-  to: '#journey',
-  active: activeHeadings.value.includes('journey') && !activeHeadings.value.includes('about')
-}, {
   label: 'Support Us',
   to: '#support-us',
-  active: activeHeadings.value.includes('support-us') && !activeHeadings.value.includes('journey')
+  active: activeHeadings.value.includes('support-us') && !activeHeadings.value.includes('about')
 }, {
   label: 'Achievements',
   to: '#achievements',
@@ -28,7 +24,6 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
     document.querySelector('#home'),
     document.querySelector('#about'),
-    document.querySelector('#journey'),
     document.querySelector('#support-us'),
     document.querySelector('#achievements'),
     document.querySelector('#testimonials')

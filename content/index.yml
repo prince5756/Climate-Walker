@@ -32,45 +32,6 @@ about:
     - title: Global Recognition
       description: My passion for travel and eco-tourism led me to study in Europe, and in 2025 I was invited to Greece for an international youth festival to inspire students and youth.
       class: border-l border-default pt-4 pl-4
-journey:
-  title: The [Journey]{.text-primary} Chapters
-  description: 617 Days. 18 Countries. One Planet. One Mission. Six distinct phases, each with unique challenges and discoveries.
-  chapters:
-    - title: Mediterranean Islands
-      description: Starting in Malta's ancient harbors, walking through Italy's diverse landscapes to Vatican City's spiritual heart.
-      icon: i-lucide-sun
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-
-    - title: Balkan Crossroads
-      description: Through Slovenia's Alps to Croatia's coast, across Bosnia's mountains and Serbia's plains.
-      icon: i-lucide-map
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-
-    - title: Eastern Passage
-      description: Bulgaria's rose valleys to Greece's ancient paths, crossing into Turkey's gateway between continents.
-      icon: i-lucide-compass
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-
-    - title: Caucasus Heights
-      description: Georgia's wine country to Armenia's ancient monasteries, crossing some of Earth's highest mountain passes.
-      icon: i-lucide-mountain
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-
-    - title: Persian Journey
-      description: Iran's vast deserts and ancient cities, experiencing Persian hospitality and climate adaptation.
-      icon: i-lucide-flame
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-
-    - title: Himalayan Finale
-      description: Pakistan's mighty peaks to India's diverse landscapes, completing the epic transcontinental journey.
-      icon: i-lucide-flag
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 donate:
   title: Choose your way to [support]{.text-primary} us
   description: Your support makes this epic journey possible and helps spread climate awareness across continents.
