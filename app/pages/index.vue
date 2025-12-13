@@ -27,7 +27,7 @@ useSeoMeta({
       title: 'max-w-3xl mx-auto'
     }">
       <template #top>
-        <HeroBackground />
+        <AppHeroBackground />
       </template>
 
       <template #title>
@@ -136,7 +136,7 @@ useSeoMeta({
         </div>
       </template>
 
-      <LazyStarsBg />
+      <LazyAppStarsBg />
     </UPageCTA>
   </div>
 </template>

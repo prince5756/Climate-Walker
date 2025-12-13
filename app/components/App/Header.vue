@@ -40,35 +40,16 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     </template>
 
     <template #right>
-      <UNavigationMenu
-        :items="items"
-        variant="link"
-        class="hidden lg:block"
-      />
+      <UNavigationMenu :items="items" variant="link" class="hidden lg:block" />
 
-      <UButton
-        to="#support-us"
-        label="Donate Now"
-        variant="subtle"
-        class="hidden lg:block"
-      />
+      <UButton to="#support-us" label="Donate Now" variant="subtle" class="hidden lg:block" />
 
       <UColorModeButton />
     </template>
 
     <template #body>
-      <UNavigationMenu
-        :items="items"
-        orientation="vertical"
-        class="-mx-2.5"
-      />
-      <UButton
-        to="#support-us"
-        class="mt-4"
-        label="Donate Now"
-        variant="subtle"
-        block
-      />
+      <UNavigationMenu :items="items" orientation="vertical" class="-mx-2.5" />
+      <UButton to="#support-us" class="mt-4" label="Donate Now" variant="subtle" block />
     </template>
   </UHeader>
 </template>
