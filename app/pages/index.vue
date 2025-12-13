@@ -16,134 +16,75 @@ useSeoMeta({
 </script>
 
 <template>
-  <div
-    v-if="page"
-    class="relative"
-  >
+  <div v-if="page" class="relative">
     <div class="hidden lg:block">
-      <UColorModeImage
-        light="/images/light/line-1.svg"
-        dark="/images/dark/line-1.svg"
-        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[650px]"
-      />
+      <UColorModeImage light="/images/light/line-1.svg" dark="/images/dark/line-1.svg"
+        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[650px]" />
     </div>
 
-    <UPageHero
-      id="home"
-      :description="page.description"
-      :links="page.hero.links"
-      :ui="{
-        container: 'md:pt-18 lg:pt-20',
-        title: 'max-w-3xl mx-auto'
-      }"
-    >
+    <UPageHero id="home" :description="page.description" :links="page.hero.links" :ui="{
+      container: 'md:pt-18 lg:pt-20',
+      title: 'max-w-3xl mx-auto'
+    }">
       <template #top>
         <HeroBackground />
       </template>
 
       <template #title>
-        <MDC
-          :value="page.title"
-          unwrap="p"
-        />
+        <MDC :value="page.title" unwrap="p" />
       </template>
     </UPageHero>
 
-    <UPageSection
-      id="about"
-      :description="page.about.description"
-      :features="page.about.sections"
-      orientation="horizontal"
-      :ui="{
+    <UPageSection id="about" :description="page.about.description" :features="page.about.sections"
+      orientation="horizontal" :ui="{
         container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
         features: 'gap-0'
-      }"
-      reverse
-    >
+      }" reverse>
       <template #title>
-        <MDC
-          :value="page.about.title"
-          class="sm:*:leading-11"
-        />
+        <MDC :value="page.about.title" class="sm:*:leading-11" />
       </template>
-      <img
-        :src="page.about.image"
-        :alt="page.about.title"
-        class="block left-0 w-full max-w-md md:2xl:max-w-lg rounded-md"
-      >
+      <img :src="page.about.image" :alt="page.about.title"
+        class="block left-0 w-full max-w-md md:2xl:max-w-lg rounded-md">
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
-    <UPageSection
-      id="support-us"
-      class="mb-32 overflow-hidden"
-      :title="page.donate.title"
-      :description="page.donate.description"
-      :plans="page.donate.plans"
-      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
-    >
+    <UPageSection id="support-us" class="mb-32 overflow-hidden" :title="page.donate.title"
+      :description="page.donate.description" :plans="page.donate.plans"
+      :ui="{ title: 'text-left @container relative', description: 'text-left' }">
       <template #title>
         <MDC :value="page.donate.title" />
 
         <div class="hidden @min-[1120px]:block">
-          <UColorModeImage
-            light="/images/light/line-4.svg"
-            dark="/images/dark/line-4.svg"
-            class="absolute top-0 right-0 size-full transform translate-x-[60%]"
-          />
+          <UColorModeImage light="/images/light/line-4.svg" dark="/images/dark/line-4.svg"
+            class="absolute top-0 right-0 size-full transform translate-x-[60%]" />
         </div>
       </template>
 
       <UPricingPlans scale>
-        <UPricingPlan
-          v-for="(plan, index) in page.donate.plans"
-          :key="index"
-          :title="plan.title"
-          :description="plan.description"
-          :price="plan.price"
-          :billing-period="plan.billing_period"
-          :billing-cycle="plan.billing_cycle"
-          :highlight="plan.highlight"
-          :scale="plan.highlight"
-          variant="soft"
-          :features="plan.features"
-          :button="plan.button"
-        />
+        <UPricingPlan v-for="(plan, index) in page.donate.plans" :key="index" :title="plan.title"
+          :description="plan.description" :price="plan.price" :billing-period="plan.billing_period"
+          :billing-cycle="plan.billing_cycle" :highlight="plan.highlight" :scale="plan.highlight" variant="soft"
+          :features="plan.features" :button="plan.button" />
       </UPricingPlans>
     </UPageSection>
 
-    <UPageSection
-      id="achievements"
-      :description="page.achievements.description"
-      class="relative overflow-hidden"
-    >
+    <UPageSection id="achievements" :description="page.achievements.description" class="relative overflow-hidden">
       <template #headline>
-        <UColorModeImage
-          light="/images/light/line-3.svg"
-          dark="/images/dark/line-3.svg"
-          class="absolute -top-10 sm:top-0 right-1/2 h-24"
-        />
+        <UColorModeImage light="/images/light/line-3.svg" dark="/images/dark/line-3.svg"
+          class="absolute -top-10 sm:top-0 right-1/2 h-24" />
       </template>
       <template #title>
         <MDC :value="page.achievements.title" />
       </template>
 
       <template #features>
-        <UPageCard
-          v-for="(item, index) in page.achievements.items"
-          :key="index"
-          class="group"
-          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
-        > 
+        <UPageCard v-for="(item, index) in page.achievements.items" :key="index" class="group"
+          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }">
           <div class="flex justify-between items-center">
             <Icon :icon="item.icon" class="text-primary text-5xl mb-3" />
 
-            <UButton
-              :label="item.label"
-              variant="subtle"
-              class="hidden lg:block"
-            />
+            <UButton :label="item.label" variant="subtle" class="hidden lg:block" />
           </div>
 
           <div class="flex flex-col gap-2">
@@ -158,18 +99,11 @@ useSeoMeta({
       </template>
     </UPageSection>
 
-    <UPageSection
-      id="testimonials"
-      :title="page.testimonials.title"
-      :description="page.testimonials.description"
-      :items="page.testimonials.items"
-    >
+    <UPageSection id="testimonials" :title="page.testimonials.title" :description="page.testimonials.description"
+      :items="page.testimonials.items">
       <template #headline>
-        <UColorModeImage
-          light="/images/light/line-5.svg"
-          dark="/images/dark/line-5.svg"
-          class="absolute -top-10 sm:top-0 right-1/2 h-24"
-        />
+        <UColorModeImage light="/images/light/line-5.svg" dark="/images/dark/line-5.svg"
+          class="absolute -top-10 sm:top-0 right-1/2 h-24" />
       </template>
       <template #title>
         <MDC :value="page.testimonials.title" />
@@ -177,18 +111,11 @@ useSeoMeta({
 
       <UContainer>
         <UPageColumns class="xl:columns-3">
-          <UPageCard
-            v-for="(testimonial, index) in page.testimonials.items"
-            :key="index"
-            variant="subtle"
+          <UPageCard v-for="(testimonial, index) in page.testimonials.items" :key="index" variant="subtle"
             :description="testimonial.quote"
-            :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
-          >
+            :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }">
             <template #footer>
-              <UUser
-                v-bind="testimonial.user"
-                size="xl"
-              />
+              <UUser v-bind="testimonial.user" size="xl" />
             </template>
           </UPageCard>
         </UPageColumns>
@@ -197,25 +124,15 @@ useSeoMeta({
 
     <USeparator />
 
-    <UPageCTA
-      v-bind="page.cta"
-      variant="naked"
-      class="overflow-hidden @container"
-    >
+    <UPageCTA v-bind="page.cta" variant="naked" class="overflow-hidden @container">
       <template #title>
         <MDC :value="page.cta.title" />
 
         <div class="@max-[1280px]:hidden">
-          <UColorModeImage
-            light="/images/light/line-6.svg"
-            dark="/images/dark/line-6.svg"
-            class="absolute left-10 -top-10 sm:top-0 h-full"
-          />
-          <UColorModeImage
-            light="/images/light/line-7.svg"
-            dark="/images/dark/line-7.svg"
-            class="absolute right-0 bottom-0 h-full"
-          />
+          <UColorModeImage light="/images/light/line-6.svg" dark="/images/dark/line-6.svg"
+            class="absolute left-10 -top-10 sm:top-0 h-full" />
+          <UColorModeImage light="/images/light/line-7.svg" dark="/images/dark/line-7.svg"
+            class="absolute right-0 bottom-0 h-full" />
         </div>
       </template>
 
