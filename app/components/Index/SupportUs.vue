@@ -1,29 +1,47 @@
 <script setup lang="ts">
 defineProps<{
-    content: any,
+  content: any,
 }>()
 </script>
 
 <template>
 
-    <UPageSection id="support-us" class="mb-32 overflow-hidden" :title="content.title"
-        :description="content.description" :plans="content.plans"
-        :ui="{ title: 'text-left @container relative', description: 'text-left' }">
-        <template #title>
-            <MDC :value="content.title" />
+  <UPageSection id="support-us" class="overflow-hidden" :ui="{
+    container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
+    features: 'gap-0',
+    title: 'text-left @container relative'
+  }">
+    <template #title>
+      <MDC :value="content.title" />
 
-            <div class="hidden @min-[1120px]:block">
-                <UColorModeImage light="/images/light/line-4.svg" dark="/images/dark/line-4.svg"
-                    class="absolute top-0 right-0 size-full transform translate-x-[60%]" />
-            </div>
-        </template>
+      <div class="hidden @min-[1120px]:block">
+        <UColorModeImage light="/images/light/line-4.svg" dark="/images/dark/line-4.svg"
+          class="absolute top-0 right-0 size-full transform translate-x-[60%]" />
+      </div>
+    </template>
 
-        <UPricingPlans scale>
-            <UPricingPlan v-for="(plan, index) in content.plans" :key="index" :title="plan.title"
-                :description="plan.description" :price="plan.price" :billing-period="plan.billing_period"
-                :billing-cycle="plan.billing_cycle" :highlight="plan.highlight" :scale="plan.highlight" variant="soft"
-                :features="plan.features" :button="plan.button" />
-        </UPricingPlans>
-    </UPageSection>
+    <div class="grid md:grid-cols-2">
+      <div class="space-y-8">
+        <div v-for="(section, i) in content.sections" :key="i" :class="section.class">
+          <h3 class="text-xl font-semibold mb-2">{{ section.title }}</h3>
+
+          <p v-if="section.description" class="text-gray-700 dark:text-gray-300">
+            {{ section.description }}
+          </p>
+
+          <ul v-if="section.points" class="list-disc ml-6 space-y-1 text-gray-700 dark:text-gray-300">
+            <li v-for="(p, idx) in section.points" :key="idx">{{ p }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 md:mt-0 flex flex-col items-center justify-center gap-6">
+        <UButton v-for="(btn, index) in content.buttons" :key="index" :label="btn.label" :to="btn.to"
+          :variant="btn.variant" size="xl"
+          class="w-76 px-8 py-3 rounded-md shadow-md flex justify-center items-center" />
+      </div>
+    </div>
+
+  </UPageSection>
 
 </template>

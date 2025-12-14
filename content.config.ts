@@ -43,14 +43,22 @@ export const collections = {
         )
       }),
       support: createBaseSchema().extend({
-        plans: z.array(
+        sections: z.array(
           createBaseSchema().extend({
-            price: z.string().nonempty(),
-            button: createLinkSchema(),
-            features: z.array(z.string().nonempty()),
-            highlight: z.boolean().optional(),
-            billing_period: z.string().nonempty(),
-            billing_cycle: z.string().nonempty()
+            icon: z.string().optional().editor({ input: 'icon' }),
+
+            // section may contain either description OR points[]
+            description: z.string().optional(),
+            points: z.array(z.string()).optional()
+          })
+        ),
+
+        // removed plans completely
+        buttons: z.array(
+          z.object({
+            label: z.string().nonempty(),
+            to: z.string().url(),
+            variant: z.string().optional()
           })
         )
       }),

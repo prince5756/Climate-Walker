@@ -40,41 +40,35 @@ about:
 
 support:
   title: Choose your way to [support]{.text-primary} us
-  description: Your support makes this epic journey possible and helps spread climate awareness across continents.
-  plans:
-    - title: PayPal
-      description: Support my journey directly through PayPal and help me walk further, explore deeper, and share more stories from around the world.
-      price: Any amount you wish
-      features:
-        - Fast and secure donation via PayPal
-        - Perfect for international supporters
-        - One-time or recurring contributions
-        - Receive exclusive journey updates by email
-        - Directly helps cover essentials like food, gear, and shelter
-        - Includes a heartfelt thank-you message
-      button:
-        label: Donate with PayPal
-        variant: subtle
-        to: "https://rzp.io/rzp/EERYYaM"
+  sections:
+    - title: Why I Need Support!!
+      description: >
+        I’m covering long distances every day—on foot—through heat, rain, and terrain.
+        I am walking thousands of kilometers—from Malta to India—not for leisure,
+        not for fame, but for something far bigger than myself.
+      class: border-l border-primary pl-4
 
-    - title: Razorpay
-      description: Ideal for supporters in India — contribute easily in INR and help me continue walking across continents and sharing this mission.
-      price: Any amount you wish
-      features:
-        - Instant and secure Razorpay payments
-        - Supports UPI, cards, and net banking
-        - No international transfer fees
-        - Option to send personalized notes with your donation
-        - Helps fund local travels, maps, and documentation
-        - You’ll be featured (optional) on the Supporters Wall
-      button:
-        label: Donate with Razorpay
-        color: neutral
-        variant: outline
-        to: "https://rzp.io/rzp/EERYYaM"
+    - title: What Your Support Means
+      class: border-l border-default pt-4 pl-4
+      points:
+        - "A safe place to sleep"
+        - "A simple meal to continue"
+        - "Tools to share the stories I gather"
+        - "Ability to reach more people with this urgent message"
+        - "Communication: sim cards, internet, power banks, filming tools"
+        - "Awareness materials: posters, flyers, translation, event setups"
+        - "Safety & visas: border permits, emergency help, insurance"
+
+  buttons:
+    - label: Donate with PayPal
+      to: "https://www.paypal.com/"
+      variant: solid
+    - label: Donate with Razorpay
+      to: "https://rzp.io/rzp/EERYYaM"
+      variant: outline
 
 achievements:
-  title: Milestones of [Excellence]{.text-primary}
+  title: My [Achievements]{.text-primary}
   description: From certifications to creating organizations, each achievement represents a step towards inspiring and empowering others through adventure and nature conservation.
   items:
     - title: Diploma in Tourism
