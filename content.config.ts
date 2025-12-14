@@ -42,7 +42,7 @@ export const collections = {
           })
         )
       }),
-      donate: createBaseSchema().extend({
+      support: createBaseSchema().extend({
         plans: z.array(
           createBaseSchema().extend({
             price: z.string().nonempty(),

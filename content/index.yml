@@ -1,9 +1,10 @@
 seo:
   title: The Climate Walker | Walking Across the World for a Greener Future
   description: Follow the Climate Walker on a 12,000 km journey from Malta to India, inspiring climate awareness, sustainability, and unity across 20 nations.
-title: Walking Around World for Green Future
-description: Join the epic 12,000 km journey from Malta to India - one step at a time, spreading climate awareness across 20 countries and countless communities.
+
 hero:
+  title: Walking Around World for Green Future
+  description: Join the epic 12,000 km journey from Malta to India - one step at a time, spreading climate awareness across 20 countries and countless communities.
   links:
     - label: Watch journey
       icon: i-simple-icons-youtube
@@ -13,26 +14,31 @@ hero:
       to: https://www.youtube.com/@the.climate.walker
       target: _blank
       size: xl
+
     - label: Support the mission
       size: xl
       color: neutral
       variant: outline
-      to: '#support-us'
+      to: "#support-us"
+
 about:
-  title: 'The Epic [Journey]{.text-primary}'
+  title: "The Epic [Journey]{.text-primary}"
   description: From the Mediterranean shores of Malta to the diverse landscapes of India, every step tells a story of climate resilience and hope.
-  image: '/images/mountain-climber.png'
+  image: "/images/mountain-climber.png"
   sections:
     - title: About Me
       description: I am Jaydip from Bhavnagar, Gujarat, an adventurer and nature lover. I worked as a trekking instructor with Invincible NGO and explored India on foot for 182 days, which gave me a deeper purpose in life.
       class: border-l border-primary pl-4
+
     - title: My Work
       description: I became a certified kayaking instructor and founded Gujarat’s first kayaking organization, where over 15,000 people trained. I am also a certified lifeguard and power paraglider, combining adventure with safety and skill.
       class: border-l border-default pt-4 pl-4
+
     - title: Global Recognition
       description: My passion for travel and eco-tourism led me to study in Europe, and in 2025 I was invited to Greece for an international youth festival to inspire students and youth.
       class: border-l border-default pt-4 pl-4
-donate:
+
+support:
   title: Choose your way to [support]{.text-primary} us
   description: Your support makes this epic journey possible and helps spread climate awareness across continents.
   plans:
@@ -49,7 +55,8 @@ donate:
       button:
         label: Donate with PayPal
         variant: subtle
-        to: 'https://rzp.io/rzp/EERYYaM'  
+        to: "https://rzp.io/rzp/EERYYaM"
+
     - title: Razorpay
       description: Ideal for supporters in India — contribute easily in INR and help me continue walking across continents and sharing this mission.
       price: Any amount you wish
@@ -64,7 +71,8 @@ donate:
         label: Donate with Razorpay
         color: neutral
         variant: outline
-        to: 'https://rzp.io/rzp/EERYYaM'
+        to: "https://rzp.io/rzp/EERYYaM"
+
 achievements:
   title: Milestones of [Excellence]{.text-primary}
   description: From certifications to creating organizations, each achievement represents a step towards inspiring and empowering others through adventure and nature conservation.
@@ -98,33 +106,35 @@ achievements:
       label: Adventure
       icon: lucide:wind
       description: Successfully completed basic and advanced courses in power paragliding from NIMAS in 2023. Soaring through skies with certified expertise.
+
 testimonials:
   title: Join thousands of [supporters]{.text-primary}
   description: Hear from the amazing people who have been inspired by the journey and have helped make every step possible through their kindness and support.
   items:
     - quote: Supporting this journey reminded me that even small steps can change the world. Watching him walk across countries for a cause is truly inspiring.
       user:
-        name: 'Sarah Moriceau'
-        description: 'Traveler & Environmentalist'
+        name: "Sarah Moriceau"
+        description: "Traveler & Environmentalist"
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19"
 
     - quote: His dedication to walk across continents for awareness is beyond admirable. It shows what passion and purpose can achieve when combined with courage.
       user:
-        name: 'Sébastien Chopin'
-        description: 'Adventure Photographer'
+        name: "Sébastien Chopin"
+        description: "Adventure Photographer"
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux"
 
     - quote: I’ve followed his journey since the early days. The stories, the people he meets, and the purpose behind every mile walked—it’s truly a movement of hope.
       user:
-        name: 'Benjamin Canac'
-        description: 'Travel Blogger'
+        name: "Benjamin Canac"
+        description: "Travel Blogger"
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac"
+
 cta:
   title: Follow the Journey
   description: Stay updated with daily progress, stunning photos, and inspiring stories from the road.
@@ -137,6 +147,7 @@ cta:
       to: https://www.youtube.com/@the.climate.walker
       target: _blank
       size: xl
+
     - label: Instagram
       icon: i-simple-icons-instagram
       trailing: true
@@ -145,6 +156,7 @@ cta:
       to: https://www.instagram.com/the.climate.walker
       target: _blank
       size: xl
+
     - label: Facebook
       icon: i-simple-icons-facebook
       trailing: true
@@ -153,6 +165,7 @@ cta:
       to: https://www.facebook.com/share/1EvQgo67RF/
       target: _blank
       size: xl
+
     - label: WhatsApp
       icon: i-simple-icons-whatsapp
       trailing: true
