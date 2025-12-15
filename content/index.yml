@@ -3,7 +3,7 @@ seo:
   description: Follow the Climate Walker on a 12,000 km journey from Malta to India, inspiring climate awareness, sustainability, and unity across 20 nations.
 
 hero:
-  title: Walking Around World for Green Future
+  title: Walking across 20 countries for us and the Earth
   description: Join the epic 12,000 km journey from Malta to India - one step at a time, spreading climate awareness across 20 countries and countless communities.
   links:
     - label: Watch journey
@@ -22,20 +22,28 @@ hero:
       to: "#support-us"
 
 about:
-  title: "The Epic [Journey]{.text-primary}"
-  description: From the Mediterranean shores of Malta to the diverse landscapes of India, every step tells a story of climate resilience and hope.
-  image: "/images/mountain-climber.png"
+  image: "/images/my_journey.webp"
   sections:
     - title: About Me
-      description: I am Jaydip from Bhavnagar, Gujarat, an adventurer and nature lover. I worked as a trekking instructor with Invincible NGO and explored India on foot for 182 days, which gave me a deeper purpose in life.
+      description: "I am a visionary person from the very small village of Bhavnagar, Gujarat, India. I was a brilliant student throughout my school years, then I began my career by studying chartered accountancy (C.A.) in Surat, but soon I realized that I was more interested in the tourism sector..."
+      to: /about
       class: border-l border-primary pl-4
 
-    - title: My Work
-      description: I became a certified kayaking instructor and founded Gujarat’s first kayaking organization, where over 15,000 people trained. I am also a certified lifeguard and power paraglider, combining adventure with safety and skill.
+    - title: My Achievements
+      description: "I am the rst solo traveler from Gujarat who traveled all over India by walking and hitchhiking for 182 days. For this incredible journey of mine, I was featured on so many TV channels, magazines, and social media platforms."
+      to: /#achievements
       class: border-l border-default pt-4 pl-4
 
     - title: Global Recognition
-      description: My passion for travel and eco-tourism led me to study in Europe, and in 2025 I was invited to Greece for an international youth festival to inspire students and youth.
+      description: "My passion for travel and eco-tourism led me to study in Europe, and in 2025 I was invited to Greece for an international youth festival to inspire students and youth."
+      class: border-l border-default pt-4 pl-4
+
+    - title: About mission
+      description: "It’s 12,000 Kilometres walking journey from Malta(Europe) to India across 20 countries for Spreading Awareness about climate change and sustainable living."
+      class: border-l border-default pt-4 pl-4
+
+    - title: Why this mission
+      description: "Climate change is not a future threat, it is a silent goodbye we are already saying to our rivers, forests, and children so This mission is my promise to the planet: I will not stay silent while our only home is burning."
       class: border-l border-default pt-4 pl-4
 
 support:
@@ -61,7 +69,7 @@ support:
 
   buttons:
     - label: Donate with PayPal
-      to: "https://www.paypal.com/"
+      to: "https://www.paypal.com/paypalme/TheClimateWalker"
       variant: solid
     - label: Donate with Razorpay
       to: "https://rzp.io/rzp/EERYYaM"
@@ -74,32 +82,32 @@ achievements:
     - title: Diploma in Tourism
       label: Education
       icon: lucide:book-open-check
-      description: Pursued a comprehensive diploma in hospitality, tour, and travel management from a well-known institute in Surat, Gujarat, India.
+      description: I pursued a diploma in hospitality, tour, and travel management from a wellknown institute in Surat, Gujarat, India.
 
-    - title: Malta Hospitality Diploma
-      label: International Study
-      icon: lucide:globe
-      description: Cleared the exam and interview of Malta's reputed college to study for a diploma in hospitality in Europe. International education achievement.
+    - title: International Youth Festival – Greece
+      label: Global Youth Leadership
+      icon: lucide:users
+      description: The ‘Go Alive’ organization selected me for the youth festival in Greece to inspire Greek students and youth along with 25 other team members. They organized youth festivals in different parts of Greece and inspired thousands of people for non-formal learning.
 
     - title: First Solo Traveler
       label: Achievement
       icon: lucide:footprints
-      description: First solo traveler from Gujarat who traveled all over India by walking and hitchhiking for 182 days. Featured on TV channels, magazines, and social media.
+      description: I am the first solo traveler from Gujarat who traveled all over India by walking and hitchhiking for 182 days. For this incredible journey of mine, I was featured on so many TV channels, magazines, and social media platforms.
 
     - title: Certified Trekking Instructor
       label: Trekking
       icon: lucide:mountain
-      description: Became a certified trekking instructor with Invincible NGO, India's largest trekking organization. Guided thousands of participants through their dream treks.
+      description: I am a certifed trekking instructor and worked with India’s largest trekking organization, “Invincible NGO. ” Thousands of participants completed their dream treks under my guidance in different parts of India.
 
     - title: Certified Kayaking Instructor
       label: Water Sports
       icon: lucide:waves
-      description: Passed India's toughest institute for watersports "NIWS" (National Institute of Watersports) exam in 2022. Founded Gujarat's first certified kayaking organization.
+      description: In 2022, I became a certied kayaking instructor. I passed India’s toughest institute for watersports “NIWS”s (National Institute of Watersports) exam and for that, I was honored with a license and certicate of kayaking.
 
     - title: Certified Power Paraglider
       label: Adventure
       icon: lucide:wind
-      description: Successfully completed basic and advanced courses in power paragliding from NIMAS in 2023. Soaring through skies with certified expertise.
+      description: In 2023, I successfully completed basic and advanced courses in power paragliding from a well-renowned institute called “NIMAS” and became a certied power paraglider
 
 testimonials:
   title: Join thousands of [supporters]{.text-primary}
