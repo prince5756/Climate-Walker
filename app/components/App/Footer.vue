@@ -3,10 +3,10 @@ const columns = [
   {
     label: 'Links',
     children: [
-      { label: 'Home', to: '#home' },
-      { label: 'About', to: '#about' },
-      { label: 'Support Us', to: '#support-us' },
-      { label: 'Achievements', to: '#achievements' }
+      { label: 'Home', to: '/#home' },
+      { label: 'About', to: '/about' },
+      { label: 'Support Us', to: '/#support-us' },
+      { label: 'Achievements', to: '/#achievements' }
     ]
   },
   {

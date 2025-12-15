@@ -90,5 +90,12 @@ export const collections = {
         links: z.array(createLinkSchema())
       })
     })
+  }),
+  about: defineCollection({
+    type: 'page',
+    source: 'about.yml',
+    schema: z.object({
+      content: z.object({})
+    })
   })
 }

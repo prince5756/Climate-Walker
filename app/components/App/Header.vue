@@ -4,19 +4,19 @@ const { activeHeadings, updateHeadings } = useScrollspy()
 
 const items = computed(() => [{
   label: 'Home',
-  to: '#home',
+  to: '/#home',
   active: activeHeadings.value.includes('home')
 }, {
   label: 'About',
-  to: '#about',
+  to: '/about',
   active: activeHeadings.value.includes('about') && !activeHeadings.value.includes('home')
 }, {
   label: 'Support Us',
-  to: '#support-us',
+  to: '/#support-us',
   active: activeHeadings.value.includes('support-us') && !activeHeadings.value.includes('about')
 }, {
   label: 'Achievements',
-  to: '#achievements',
+  to: '/#achievements',
   active: activeHeadings.value.includes('achievements') && !activeHeadings.value.includes('support-us')
 }])
 
