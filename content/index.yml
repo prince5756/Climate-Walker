@@ -113,29 +113,29 @@ testimonials:
   title: Join thousands of [supporters]{.text-primary}
   description: Hear from the amazing people who have been inspired by the journey and have helped make every step possible through their kindness and support.
   items:
-    - quote: Supporting this journey reminded me that even small steps can change the world. Watching him walk across countries for a cause is truly inspiring.
+    - quote: I truly believe in this mission, and even more, I believe in the man behind it. My heartfelt support for Jaydip, from the bottom of my heart. 😇
       user:
-        name: "Sarah Moriceau"
-        description: "Traveler & Environmentalist"
+        name: "Clifford Galea"
+        description: "High Commissioner of Namibia"
         target: _blank
         avatar:
-          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19"
+          src: "/images/testimonials/Clifford-Galea.JPG"
 
-    - quote: His dedication to walk across continents for awareness is beyond admirable. It shows what passion and purpose can achieve when combined with courage.
+    - quote: Everyone must listen to and understand climate change and take action. Meeting him showed me his bravery, clarity of vision, and deep knowledge. That is why we support him—as a true climate action hero. 🌍
       user:
-        name: "Sébastien Chopin"
-        description: "Adventure Photographer"
+        name: "Abigail Cutajar"
+        description: "CEO of Climate Action Authority, Malta"
         target: _blank
         avatar:
-          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux"
+          src: "/images/testimonials/Abigail-Cutajar.JPG"
 
-    - quote: I’ve followed his journey since the early days. The stories, the people he meets, and the purpose behind every mile walked—it’s truly a movement of hope.
+    - quote: He earned my trust from the very beginning—traveling 20 countries in his 20s with such a powerful mission. I truly wish I had done something like this at his age… I’m jealous 😅
       user:
-        name: "Benjamin Canac"
-        description: "Travel Blogger"
+        name: "Fabio Spiteri "
+        description: "Athlete and animal rights activist"
         target: _blank
         avatar:
-          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac"
+          src: "/images/testimonials/Fabio-spiteri.JPG"
 
 cta:
   title: Follow the Journey
