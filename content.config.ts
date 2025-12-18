@@ -97,5 +97,20 @@ export const collections = {
     schema: z.object({
       content: z.object({})
     })
+  }),
+  global_recognition: defineCollection({
+    type: 'page',
+    source: 'global-recognition.yml',
+    schema: z.object({
+      content: z.array(
+        z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty(),
+          image: z.string().nonempty().editor({ input: 'media' }),
+          url: z.string().nonempty(),
+          tags: z.array(z.string()),
+        })
+      )
+    })
   })
 }

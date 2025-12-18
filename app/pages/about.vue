@@ -25,7 +25,7 @@ useSeoMeta({
       :description="page.description"
       orientation="horizontal"
       :ui="{
-        container: 'lg:flex sm:flex-row items-center',
+        container: 'lg:flex sm:flex-row items-center max-w-5xl',
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
         links: 'justify-start'
@@ -44,7 +44,7 @@ useSeoMeta({
     </UPageHero>
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: '!pt-0 max-w-5xl'
       }"
     >
       <MDC

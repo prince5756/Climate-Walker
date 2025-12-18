@@ -22,7 +22,7 @@ hero:
       to: "#support-us"
 
 about:
-  image: "/images/my_journey.webp"
+  image: "/images/my_journey.PNG"
   sections:
     - title: About Me
       description: "I am a visionary person from the very small village of Bhavnagar, Gujarat, India. I was a brilliant student throughout my school years, then I began my career by studying chartered accountancy (C.A.) in Surat, but soon I realized that I was more interested in the tourism sector..."
@@ -36,6 +36,7 @@ about:
 
     - title: Global Recognition
       description: "My passion for travel and eco-tourism led me to study in Europe, and in 2025 I was invited to Greece for an international youth festival to inspire students and youth."
+      to: /global-recognition
       class: border-l border-default pt-4 pl-4
 
     - title: About mission
