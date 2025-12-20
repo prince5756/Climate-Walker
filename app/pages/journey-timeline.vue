@@ -23,6 +23,7 @@ useSeoMeta({
 
 <template>
   <UPage v-if="page">
+
     <UPageHero :title="page.title" :description="page.description" :ui="{
       container: 'max-w-5xl',
       title: '!mx-0 text-left',
@@ -71,5 +72,6 @@ useSeoMeta({
       </div>
 
     </UPageSection>
+
   </UPage>
 </template>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 const { data: page } = await useAsyncData('index', () => queryCollection('content').first())
+
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
@@ -13,10 +14,12 @@ useSeoMeta({
   ogType: 'website',
   ogUrl: 'https://theclimatewalker.com/',
 })
+
 </script>
 
 <template>
   <div v-if="page" class="relative">
+
     <div class="hidden lg:block">
       <UColorModeImage light="/images/light/line-1.svg" dark="/images/dark/line-1.svg"
         class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[650px]" />

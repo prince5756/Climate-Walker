@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 defineProps<{
     country: string
     kilometers: number | string
@@ -6,6 +7,7 @@ defineProps<{
     date: string
     direction: string
 }>()
+
 </script>
 
 <template>
@@ -14,7 +16,9 @@ defineProps<{
         rounded: 'rounded-2xl',
         shadow: 'shadow-md'
     }">
-        <div class="flex items-center justify-between" :class="direction == 'right' ? 'md:flex-row-reverse' : 'md:flex-row'">
+
+        <div class="flex items-center justify-between"
+            :class="direction == 'right' ? 'md:flex-row-reverse' : 'md:flex-row'">
             <p class="text-sm text-primary">
                 {{ date }}
             </p>
@@ -41,5 +45,6 @@ defineProps<{
                 </p>
             </div>
         </div>
+
     </UCard>
 </template>

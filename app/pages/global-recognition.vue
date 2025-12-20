@@ -18,10 +18,12 @@ useSeoMeta({
   description: page.value?.seo?.description || page.value?.description,
   ogDescription: page.value?.seo?.description || page.value?.description
 })
+
 </script>
 
 <template>
   <UPage v-if="page">
+
     <UPageHero :title="page.title" :description="page.description" :ui="{
       container: 'max-w-5xl',
       title: '!mx-0 text-left',

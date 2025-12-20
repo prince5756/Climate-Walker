@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 interface Star {
   x: number
   y: number
@@ -53,10 +54,12 @@ const starLayers = computed(() => [
   { stars: stars.value.normal, ...speedMap.normal },
   { stars: stars.value.slow, ...speedMap.slow }
 ])
+
 </script>
 
 <template>
   <div class="absolute pointer-events-none z-[-1] inset-y-0 inset-x-5 sm:inset-x-7 lg:inset-x-9 overflow-hidden">
+
     <svg class="absolute inset-0 pointer-events-none" viewBox="0 0 1017 181" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.5">
@@ -65,12 +68,14 @@ const starLayers = computed(() => [
         </mask>
         <path d="M0 0H1017V181H0V0Z" fill="url(#paint0_radial_846_160841)" fill-opacity="0.22" />
       </g>
+
       <defs>
         <radialGradient id="paint0_radial_846_160841" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
           gradientTransform="translate(508.999 19.5) rotate(90.177) scale(161.501 509.002)">
           <stop stop-color="var(--ui-primary)" />
           <stop offset="1" stop-color="var(--ui-primary)" stop-opacity="0" />
         </radialGradient>
+
         <linearGradient id="paint1_linear_846_160841" x1="10.9784" y1="91" x2="1017" y2="90.502"
           gradientUnits="userSpaceOnUse">
           <stop stop-color="var(--ui-primary)" stop-opacity="0" />
@@ -96,6 +101,7 @@ const starLayers = computed(() => [
         }" />
       </div>
     </div>
+
   </div>
 </template>
 

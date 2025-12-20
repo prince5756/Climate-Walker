@@ -1,18 +1,21 @@
 <script setup lang="ts">
+
 defineProps<{
   content: any,
 }>()
+
 </script>
 
 <template>
-
   <UPageSection id="support-us" class="overflow-hidden" :ui="{
     container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
     features: 'gap-0',
     title: 'text-left @container relative'
   }">
+
     <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
     <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
+
     <template #title>
       <MDC :value="content.title" />
 
@@ -45,5 +48,4 @@ defineProps<{
     </div>
 
   </UPageSection>
-
 </template>
