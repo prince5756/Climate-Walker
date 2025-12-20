@@ -126,5 +126,12 @@ export const collections = {
         })
       )
     })
-  })
+  }),
+  why_this_mission: defineCollection({
+    type: 'page',
+    source: 'why-this-mission.yml',
+    schema: z.object({
+      content: z.object({})
+    })
+  }),
 }

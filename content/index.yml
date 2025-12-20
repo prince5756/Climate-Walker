@@ -46,6 +46,7 @@ about:
 
     - title: Why this mission
       description: "Climate change is not a future threat, it is a silent goodbye we are already saying to our rivers, forests, and children so This mission is my promise to the planet: I will not stay silent while our only home is burning."
+      to: /why-this-mission
       class: border-l border-default pt-4 pl-4
 
 support:
