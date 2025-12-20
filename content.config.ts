@@ -112,5 +112,19 @@ export const collections = {
         })
       )
     })
+  }),
+  journey_timeline: defineCollection({
+    type: 'page',
+    source: 'journey-timeline.yml',
+    schema: z.object({
+      content: z.array(
+        z.object({
+          country: z.string().nonempty(),
+          date: z.string().nonempty(),
+          kilometers : z.string().nonempty(),
+          days: z.string().nonempty(),
+        })
+      )
+    })
   })
 }

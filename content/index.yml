@@ -41,6 +41,7 @@ about:
 
     - title: About mission
       description: "It’s 12,000 Kilometres walking journey from Malta(Europe) to India across 20 countries for Spreading Awareness about climate change and sustainable living."
+      to: /journey-timeline
       class: border-l border-default pt-4 pl-4
 
     - title: Why this mission

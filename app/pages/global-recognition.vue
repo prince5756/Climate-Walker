@@ -12,8 +12,6 @@ if (!page.value) {
   })
 }
 
-const { global } = useAppConfig()
-
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
@@ -56,7 +54,15 @@ useSeoMeta({
             </ULink>
           </template>
 
-          <img :src="project.image" :alt="project.title" class="object-cover w-full h-64 rounded-lg">
+          <div class="relative w-full h-64 overflow-hidden rounded-lg">
+            <!-- Blurred background -->
+            <img :src="project.image" aria-hidden="true"
+              class="absolute inset-0 w-full h-full object-cover blur-xl scale-110" />
+
+            <!-- Main image -->
+            <img :src="project.image" :alt="project.title" class="relative z-10 w-full h-full object-contain" />
+          </div>
+
         </UPageCard>
 
       </Motion>

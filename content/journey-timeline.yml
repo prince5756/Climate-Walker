@@ -1,0 +1,102 @@
+title: Journey Timeline – Walking Across Countries for Climate Awareness
+description: Follow the Climate Walker’s journey day by day as he walks across countries, covering kilometers on foot to spread climate awareness. Explore locations, distances, and milestones in this inspiring timeline.
+content:
+  - country: Malta
+    date: 26 January
+    kilometers : 105 
+    days: 4
+
+  - country: Italy
+    date: 01 Feb., to 15 April, 2026
+    kilometers : 1730
+    days: 70
+  
+  - country: Vatican City
+    date: "-"
+    kilometers : 20
+    days: 1
+
+  - country: San Marino
+    date: "-"
+    kilometers : 71 
+    days: 3
+
+  - country: Slovenia
+    date: 16 April to 25 April, 2026
+    kilometers : 227
+    days: 9
+
+  - country: Croatia
+    date: 26 April to 03 May, 2026
+    kilometers : 173
+    days: 7
+
+  - country: Bosnia
+    date: 04 May to 21 May, 2026
+    kilometers : 437
+    days: 17
+
+  - country: Serbia
+    date: 22 May to 02 June, 2026
+    kilometers : 318
+    days: 10
+
+  - country: Kosovo
+    date: 03 June to 12 June, 2026
+    kilometers : 194
+    days: 9
+
+  - country: Montenegro
+    date: 13 June to 20 June, 2026
+    kilometers : 178
+    days: 7
+
+  - country: Albania
+    date: 21 June to 30 June, 2026
+    kilometers : 232
+    days: 9
+
+  - country: North Macedonia
+    date: 01 July to 13 July, 2026
+    kilometers : 321
+    days: 13
+
+  - country: Bulgaria
+    date: 14 July to 03 August, 2026
+    kilometers : 453
+    days: 18
+
+  - country: Greece
+    date: 04 August to 12 Augus, 2026
+    kilometers : 191
+    days: 8
+
+  - country: Turkey
+    date: 13 August to 18 October, 2026
+    kilometers : 1589
+    days: 64
+
+  - country: Georgia
+    date: 19 October to 10 Nov. 2026
+    kilometers : 476
+    days: 20
+
+  - country: Armenia
+    date: 11 Nov. to 04 Dec., 2026
+    kilometers : 554
+    days: 23
+
+  - country: Iran
+    date: 04 Dec., 26 to 20 March, 2027
+    kilometers : 2370
+    days: 100
+
+  - country: Pakistan
+    date: 21 March to 23 May, 2027
+    kilometers : 1570
+    days: 63
+
+  - country: India
+    date: 24 May to 16 June
+    kilometers : 572
+    days: 23
