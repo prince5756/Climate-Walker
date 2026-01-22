@@ -45,7 +45,7 @@ useSeoMeta({
       <div class="space-y-6">
 
         <Motion v-for="(item, index) in page.content" :key="index" :initial="{ opacity: 0, y: 20 }"
-          :while-in-view="{ opacity: 1, y: 0 }" :transition="{ delay: 0.15 * index }" :in-view-options="{ once: true }">
+          :while-in-view="{ opacity: 1, y: 0 }" :transition="{ delay: 0.03 * index }" :in-view-options="{ once: true }">
 
           <div class="block md:grid md:grid-cols-[1fr_auto_1fr] items-center">
             <!-- Left card -->

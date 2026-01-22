@@ -70,6 +70,12 @@ export const collections = {
           }).optional()
         }))
       }),
+      videos: createBaseSchema().extend({
+        title: z.string(),
+        urls: z.array(
+          z.string()
+        )
+      }),
       testimonials: createBaseSchema().extend({
         items: z.array(
           z.object({

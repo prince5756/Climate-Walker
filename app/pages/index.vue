@@ -35,6 +35,8 @@ useSeoMeta({
 
     <IndexAchievements :content="page.achievements" />
 
+    <IndexVideos :content="page.videos" />
+
     <IndexTestimonials :content="page.testimonials" />
 
     <USeparator />

@@ -30,7 +30,7 @@ about:
       class: border-l border-primary pl-4
 
     - title: My Achievements
-      description: "I am the rst solo traveler from Gujarat who traveled all over India by walking and hitchhiking for 182 days. For this incredible journey of mine, I was featured on so many TV channels, magazines, and social media platforms."
+      description: "I am the first solo traveler from Gujarat who traveled all over India by walking and hitchhiking for 182 days. For this incredible journey of mine, I was featured on so many TV channels, magazines, and social media platforms."
       to: /#achievements
       class: border-l border-default pt-4 pl-4
 
@@ -85,7 +85,7 @@ achievements:
     - title: Diploma in Tourism
       label: Education
       icon: lucide:book-open-check
-      description: I pursued a diploma in hospitality, tour, and travel management from a wellknown institute in Surat, Gujarat, India.
+      description: I pursued a diploma in hospitality, tour and travel management from a wellknown institute in Surat, Gujarat, India.
 
     - title: International Youth Festival – Greece
       label: Global Youth Leadership
@@ -112,11 +112,17 @@ achievements:
       icon: lucide:wind
       description: In 2023, I successfully completed basic and advanced courses in power paragliding from a well-renowned institute called “NIMAS” and became a certied power paraglider
 
+videos:
+  title: Watch the [Story]{.text-primary}
+  urls:
+    - https://www.youtube.com/embed/AObzw_s5_Xs
+    - https://www.youtube.com/embed/MIHeWpdh6fc
+
 testimonials:
   title: Join thousands of [supporters]{.text-primary}
   description: Hear from the amazing people who have been inspired by the journey and have helped make every step possible through their kindness and support.
   items:
-    - quote: I truly believe in this mission, and even more, I believe in the man behind it. My heartfelt support for Jaydip, from the bottom of my heart. 😇
+    - quote: I truly believe in this mission, and even more, I believe in the man behind it. My heartfelt support for Jaydip, from the bottom of my heart.
       user:
         name: "Clifford Galea"
         description: "High Commissioner of Namibia"
@@ -124,7 +130,7 @@ testimonials:
         avatar:
           src: "/images/testimonials/Clifford-Galea.JPG"
 
-    - quote: Everyone must listen to and understand climate change and take action. Meeting him showed me his bravery, clarity of vision, and deep knowledge. That is why we support him—as a true climate action hero. 🌍
+    - quote: Everyone must listen to and understand climate change and take action. Meeting him showed me his bravery, clarity of vision, and deep knowledge.
       user:
         name: "Abigail Cutajar"
         description: "CEO of Climate Action Authority, Malta"
@@ -132,7 +138,7 @@ testimonials:
         avatar:
           src: "/images/testimonials/Abigail-Cutajar.JPG"
 
-    - quote: He earned my trust from the very beginning—traveling 20 countries in his 20s with such a powerful mission. I truly wish I had done something like this at his age… I’m jealous 😅
+    - quote: He earned my trust from the very beginning—traveling 20 countries in his 20s with such a powerful mission. I truly wish I had done something like this at his age.
       user:
         name: "Fabio Spiteri "
         description: "Athlete and animal rights activist"
