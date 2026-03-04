@@ -71,8 +71,8 @@ support:
         - "Safety & visas: border permits, emergency help, insurance"
 
   buttons:
-    - label: Donate with PayPal
-      to: "https://www.paypal.com/paypalme/TheClimateWalker"
+    - label: Donate from 4fund.com
+      to: "https://4fund.com/12-000-kilometre-walk-malta-to-india-for-climate-awareness"
       variant: solid
     - label: Donate with Razorpay
       to: "https://rzp.io/rzp/EERYYaM"
